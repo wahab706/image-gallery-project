@@ -1,11 +1,8 @@
-import { StaticImageData } from "next/image";
-
 // TypeScript interfaces
-
 export interface ProductImage {
   id: number;
   name: string;
-  src: StaticImageData;
+  src: string;
   alt: string;
 }
 
@@ -31,3 +28,11 @@ export interface Product {
   details: string[];
   images: ProductImage[];
 }
+
+export type CartItem = {
+  product: any;
+  selectedColor: any;
+  selectedSize: any;
+  quantity: number;
+  images: ProductImage[];
+};

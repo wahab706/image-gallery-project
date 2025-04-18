@@ -1,5 +1,5 @@
 import { FC, useCallback, useState } from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { ProductImage } from "./types";
 
 interface GalleryProps {
@@ -70,7 +70,7 @@ export const Gallery: FC<GalleryProps> = ({ images }) => {
                 }`}
               >
                 <Image
-                  src={image.src}
+                  src={`/images/${image.src}`}
                   alt={image.alt}
                   width={200}
                   height={200}
@@ -97,7 +97,7 @@ export const Gallery: FC<GalleryProps> = ({ images }) => {
             aria-label={isZoomed ? "Zoom out" : "Zoom in"}
           >
             <Image
-              src={selectedImage.src}
+              src={`/images/${selectedImage.src}`}
               alt={selectedImage.alt}
               width={800}
               height={800}
@@ -108,7 +108,7 @@ export const Gallery: FC<GalleryProps> = ({ images }) => {
               <div
                 className="absolute inset-0 bg-no-repeat pointer-events-none"
                 style={{
-                  backgroundImage: `url(${selectedImage.src.src})`,
+                  backgroundImage: `url(/images/${selectedImage.src})`,
                   backgroundPosition: `${zoomPosition.x}% ${zoomPosition.y}%`,
                   backgroundSize: "200%",
                   transform: "scale(1.5)",

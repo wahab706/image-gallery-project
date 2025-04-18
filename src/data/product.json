@@ -1,0 +1,61 @@
+{
+  "id": "prod123",
+  "name": "Premium Comfort Sneakers",
+  "price": 129.99,
+  "description": "Experience ultimate comfort with our premium sneakers featuring advanced cushioning technology and breathable materials for all-day wear.",
+  "rating": 4.8,
+  "reviewCount": 124,
+  "colors": [
+    {
+      "name": "Black",
+      "class": "bg-gray-900",
+      "selectedClass": "ring-gray-900"
+    },
+    {
+      "name": "White",
+      "class": "bg-white border border-gray-300",
+      "selectedClass": "ring-gray-400"
+    },
+    { "name": "Blue", "class": "bg-blue-500", "selectedClass": "ring-blue-500" }
+  ],
+  "sizes": [
+    { "name": "US 7", "inStock": true },
+    { "name": "US 8", "inStock": true },
+    { "name": "US 9", "inStock": true },
+    { "name": "US 10", "inStock": false },
+    { "name": "US 11", "inStock": true }
+  ],
+  "details": [
+    "Advanced cushioning technology",
+    "Breathable mesh upper",
+    "Rubber outsole for durability",
+    "Lightweight design",
+    "Orthotic-friendly removable insole"
+  ],
+  "images": [
+    {
+      "id": 1,
+      "name": "Front view",
+      "src": "product-front.png",
+      "alt": "Front view of sneakers"
+    },
+    {
+      "id": 2,
+      "name": "Side view",
+      "src": "product-side.png",
+      "alt": "Side view of sneakers"
+    },
+    {
+      "id": 3,
+      "name": "Detail view",
+      "src": "product-detail.png",
+      "alt": "Detail of sneaker sole"
+    },
+    {
+      "id": 4,
+      "name": "Back view",
+      "src": "product-back.png",
+      "alt": "Back view of sneakers"
+    }
+  ]
+}
